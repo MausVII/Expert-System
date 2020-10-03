@@ -1,7 +1,7 @@
 # Expert-System
 The knowledge base uses mostly enums as an interface so it's easier to modify and read the code. 
 The constructor of the knowledge base asks two groups of questions, the first group of questions decides the class
-of attack; you can see three main branches in the decision tree. And, the second question finds the specific type of attack
+of attack; you can see three main branches in the decision tree. And, the second question finds the specific type of attack\n
 The questions are asked using InputManager which is nothing more than a simple function that takes a string - the question
 you're asking - and returning true if the input is "yes" or false if "no". The function converts the input to lower case and asks
 you to repeat the input if you type in anything other than yes/no.

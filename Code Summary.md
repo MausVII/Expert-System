@@ -9,4 +9,4 @@
 # those variables and printing them a lot cleaner since there are so many variables/rules. Since all the malware and phishing
 # variables are bools, there is a single function in variable.h to get/set them using an index.
 # The backwards and forward chain run their own knowledge base - forward chaining integrated it into its own cpp -, and they in return are
-# called in the main.cpp when they are created using their constructors.
+# called in the expert system.cpp when they are created using their constructors.

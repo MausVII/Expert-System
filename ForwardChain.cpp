@@ -2,12 +2,12 @@
 
 ForwardChain::ForwardChain()
 {
-	traffic = question("Is there large amounts of traffic through your network or server?\n  ");
+	traffic = question("Is there large amounts of traffic through your network or server?  ");
 	if (traffic) {
 		response = DDosPrevention();
 	}
 	else {
-		functionality = question("\n\nHas your computers functionality been compromised ? \n(Y or y for yes, N or n for no) : ");
+		functionality = question("\nHas your computers functionality been compromised ? \n ");
 		if (functionality) {
 			response = MalwarePrevention();
 		}
@@ -25,7 +25,7 @@ std::string ForwardChain::DDosPrevention()
 		return "Increase your server size or decrease the amount of resources allocated per request.";
 	}
 
-	pingTime = question("\nIs your server allocating as many resources as it can(max) for each request?	");
+	pingTime = question("\nAre the Pings from users taking longer than usual or possibly never ending?	");
 	if (pingTime) {
 		return "Decrease your allowed time per Ping (set a maximum Ping time).";
 	}
